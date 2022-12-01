@@ -186,7 +186,7 @@ namespace Unit06.Game.Directing
                     Body body = new Body(position, size, velocity);
                     Animation animation = new Animation(images, Constants.BRICK_RATE, 1);
                     
-                    Brick brick = new Brick(body, animation, points, false);
+                    Criminals brick = new Criminals(body, animation, points, false);
                     cast.AddActor(Constants.BRICK_GROUP, brick);
                 }
             }

@@ -19,7 +19,7 @@ namespace Unit06.Game.Scripting
             List<Actor> bricks = cast.GetActors(Constants.BRICK_GROUP);
             foreach (Actor actor in bricks)
             {
-                Brick brick = (Brick)actor;
+                Criminals brick = (Criminals)actor;
                 Body body = brick.GetBody();
 
                 if (brick.IsDebug())

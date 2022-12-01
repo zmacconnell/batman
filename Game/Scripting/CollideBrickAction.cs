@@ -24,7 +24,7 @@ namespace Unit06.Game.Scripting
             
             foreach (Actor actor in bricks)
             {
-                Brick brick = (Brick)actor;
+                Criminals brick = (Criminals)actor;
                 Body brickBody = brick.GetBody();
                 Body ballBody = ball.GetBody();
 
