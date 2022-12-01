@@ -1,6 +1,6 @@
 namespace Unit06.Game.Casting
 {
-    /// <summary>
+    /// <summary>    
     /// A thing that participates in the game.
     /// </summary>
     public class Actor
