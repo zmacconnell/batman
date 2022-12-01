@@ -26,28 +26,28 @@ namespace Unit06.Game.Casting
         /// <summary>
         /// Bounces the ball horizontally.
         /// </summary>
-        public void BounceX()
-        {
-            Point velocity = _body.GetVelocity();
-            double rn = (_random.NextDouble() * (1.2 - 0.8) + 0.8);
-            double vx = velocity.GetX() * -1;
-            double vy = velocity.GetY();
-            Point newVelocity = new Point((int)vx, (int)vy);
-            _body.SetVelocity(newVelocity);
-        }
+        // public void BounceX()
+        // {
+        //     Point velocity = _body.GetVelocity();
+        //     double rn = (_random.NextDouble() * (1.2 - 0.8) + 0.8);
+        //     double vx = velocity.GetX() * -1;
+        //     double vy = velocity.GetY();
+        //     Point newVelocity = new Point((int)vx, (int)vy);
+        //     _body.SetVelocity(newVelocity);
+        // }
 
         /// <summary>
         /// Bounces the ball vertically.
         /// </summary>
-        public void BounceY()
-        {
-            Point velocity = _body.GetVelocity();
-            double rn = (_random.NextDouble() * (1.2 - 0.8) + 0.8);
-            double vx = velocity.GetX();
-            double vy = velocity.GetY() * -1;
-            Point newVelocity = new Point((int)vx, (int)vy);
-            _body.SetVelocity(newVelocity);
-        }
+        // public void BounceY()
+        // {
+        //     Point velocity = _body.GetVelocity();
+        //     double rn = (_random.NextDouble() * (1.2 - 0.8) + 0.8);
+        //     double vx = velocity.GetX();
+        //     double vy = velocity.GetY() * -1;
+        //     Point newVelocity = new Point((int)vx, (int)vy);
+        //     _body.SetVelocity(newVelocity);
+        // }
         
         /// <summary>
         /// Gets the body.

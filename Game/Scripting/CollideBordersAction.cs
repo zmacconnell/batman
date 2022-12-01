@@ -27,18 +27,18 @@ namespace Unit06.Game.Scripting
 
             if (x < Constants.FIELD_LEFT)
             {
-                ball.BounceX();
+                // ball.BounceX();
                 _audioService.PlaySound(bounceSound);
             }
             else if (x >= Constants.FIELD_RIGHT - Constants.BALL_WIDTH)
             {
-                ball.BounceX();
+                // ball.BounceX();
                 _audioService.PlaySound(bounceSound);
             }
 
             if (y < Constants.FIELD_TOP)
             {
-                ball.BounceY();
+                // ball.BounceY();
                 _audioService.PlaySound(bounceSound);
             }
             else if (y >= Constants.FIELD_BOTTOM - Constants.BALL_WIDTH)
