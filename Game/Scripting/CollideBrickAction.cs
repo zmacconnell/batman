@@ -30,7 +30,7 @@ namespace Unit06.Game.Scripting
 
                 if (_physicsService.HasCollided(brickBody, ballBody))
                 {
-                    // ball.BounceY();
+                    ball.BounceY();
                     Sound sound = new Sound(Constants.BOUNCE_SOUND);
                     _audioService.PlaySound(sound);
                     int points = brick.GetPoints();

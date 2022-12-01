@@ -38,7 +38,7 @@ namespace Unit06.Game.Scripting
 
             if (y < Constants.FIELD_TOP)
             {
-                // ball.BounceY();
+                ball.BounceY();
                 _audioService.PlaySound(bounceSound);
             }
             else if (y >= Constants.FIELD_BOTTOM - Constants.BALL_WIDTH)
