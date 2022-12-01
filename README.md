@@ -24,10 +24,12 @@ arrow or "start debugging" button.
 The project files and folders are organized as follows:
 ```
 root                    (project root folder)
++-- Assets              (game asset folder)
 +-- Game                (source code folder)
-+-- Program.cs          (program entry point)    
++-- Program.cs          (program entry point)
++-- Constants.cs        (constant variables)
 +-- README.md           (general info)
-+-- Unit04.csproj       (dotnet project file)
++-- Batman.csproj       (dotnet project file)
 ```
 
 ## Required Technologies
