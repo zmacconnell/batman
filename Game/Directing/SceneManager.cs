@@ -70,7 +70,7 @@ namespace Unit06.Game.Directing
 
         private void ActivateBall(Cast cast)
         {
-            Ball ball = (Ball)cast.GetFirstActor(Constants.BALL_GROUP);
+            Weapon ball = (Weapon)cast.GetFirstActor(Constants.BALL_GROUP);
             ball.Release();
         }
 
@@ -153,7 +153,7 @@ namespace Unit06.Game.Directing
         
             Body body = new Body(position, size, velocity);
             Image image = new Image(Constants.BALL_IMAGE);
-            Ball ball = new Ball(body, image, false);
+            Weapon ball = new Weapon(body, image, false);
         
             cast.AddActor(Constants.BALL_GROUP, ball);
         }
