@@ -73,5 +73,12 @@ namespace Unit06.Game.Casting
             _body.SetVelocity(velocity);
         }
         
+        /// <summary>
+        /// Throws a weapon
+        /// </summary>
+        public void Throw()
+        {
+            
+        }
     }
 }
