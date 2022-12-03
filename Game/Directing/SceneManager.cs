@@ -27,6 +27,10 @@ namespace Unit06.Game.Directing
             {
                 PrepareNewGame(cast, script);
             }
+            else if (cast.GetAllActors() == null)
+            {
+                PrepareNextLevel(cast, script);
+            }
             else if (scene == Constants.NEXT_LEVEL)
             {
                 PrepareNextLevel(cast, script);
