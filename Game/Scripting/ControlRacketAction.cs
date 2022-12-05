@@ -24,6 +24,10 @@ namespace Unit06.Game.Scripting
             {
                 racket.SwingRight();
             }
+            else if (_keyboardService.IsKeyDown(Constants.SPACE))
+            {
+                racket.Throw();
+            }
             else
             {
                 racket.StopMoving();

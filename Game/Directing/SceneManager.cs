@@ -27,6 +27,10 @@ namespace Unit06.Game.Directing
             {
                 PrepareNewGame(cast, script);
             }
+            else if (cast.GetAllActors() == null)
+            {
+                PrepareNextLevel(cast, script);
+            }
             else if (scene == Constants.NEXT_LEVEL)
             {
                 PrepareNextLevel(cast, script);
@@ -324,7 +328,7 @@ namespace Unit06.Game.Directing
             script.AddAction(Constants.UPDATE, new MoveRacketAction());
             script.AddAction(Constants.UPDATE, new CollideBordersAction(PhysicsService, AudioService));
             // script.AddAction(Constants.UPDATE, new CollideBrickAction(PhysicsService, AudioService));
-            script.AddAction(Constants.UPDATE, new CollideRacketAction(PhysicsService, AudioService));
+            // script.AddAction(Constants.UPDATE, new CollideRacketAction(PhysicsService, AudioService));
             script.AddAction(Constants.UPDATE, new CheckOverAction());     
         }
     }
