@@ -180,5 +180,8 @@ namespace Unit06
         public static string PREP_TO_LAUNCH = "PREPARING TO LAUNCH";
         public static string WAS_GOOD_GAME = "GAME OVER";
 
+
+
+        public static int SHOOT_BALL = 0;
     }
 }
