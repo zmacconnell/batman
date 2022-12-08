@@ -168,6 +168,7 @@ namespace Unit06.Game.Directing
         private void AddBricks(Cast cast)
         {
             cast.ClearActors(Constants.BRICK_GROUP);
+            Constants.SHOOT_BALL = 0;
 
             Stats stats = (Stats)cast.GetFirstActor(Constants.STATS_GROUP);
             int level = stats.GetLevel() % Constants.BASE_LEVELS;
@@ -178,8 +179,10 @@ namespace Unit06.Game.Directing
             {
                 for (int c = 0; c < rows[r].Count; c++)
                 {
-                    int x = Constants.FIELD_LEFT + c * Constants.BRICK_WIDTH;
-                    int y = Constants.FIELD_TOP + r * Constants.BRICK_HEIGHT;
+                    Random rnd = new Random();
+                    int randomNumber = rnd.Next(1,10);
+                    int x = Constants.FIELD_LEFT + randomNumber * Constants.BRICK_WIDTH;
+                    int y = Constants.FIELD_TOP + randomNumber * Constants.BRICK_HEIGHT;
 
                     string color = rows[r][c][0].ToString();
                     int frames = (int)Char.GetNumericValue(rows[r][c][1]);
