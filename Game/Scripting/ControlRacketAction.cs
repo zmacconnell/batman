@@ -27,6 +27,8 @@ namespace Unit06.Game.Scripting
             else if (_keyboardService.IsKeyDown(Constants.SPACE))
             {
                 racket.Throw();
+                Weapon ball = (Weapon)cast.GetFirstActor(Constants.BALL_GROUP);
+                Constants.SHOOT_BALL = 1;
             }
             else
             {
