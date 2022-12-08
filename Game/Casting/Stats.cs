@@ -16,7 +16,7 @@ namespace Unit06.Game.Casting
                 bool debug = false) : base(debug)
         {
             this._level = level;
-            this._lives = lives;
+            this._lives = lives; 
             this._score = score;
         }
 
