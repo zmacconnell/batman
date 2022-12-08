@@ -75,7 +75,7 @@ namespace Unit06.Game.Directing
         private void ActivateBall(Cast cast)
         {
             Weapon ball = (Weapon)cast.GetFirstActor(Constants.BALL_GROUP);
-            // ball.Release();
+            ball.Release();
         }
 
         private void PrepareNextLevel(Cast cast, Script script)
@@ -113,7 +113,10 @@ namespace Unit06.Game.Directing
 
         private void PrepareInPlay(Cast cast, Script script)
         {
-            ActivateBall(cast);
+            if (KeyboardService.IsKeyPressed(Constants.SPACE))
+            {
+                ActivateBall(cast);
+            }
             cast.ClearActors(Constants.DIALOG_GROUP);
 
             script.ClearAllActions();
