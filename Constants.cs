@@ -98,8 +98,8 @@ namespace Unit06
         // BALL
         public static string BALL_GROUP = "balls";
         public static string BALL_IMAGE = "Assets/Images/bat_ringed (1).png";
-        public static int BALL_WIDTH = 28;
-        public static int BALL_HEIGHT = 28;
+        public static int BALL_WIDTH = 80;
+        public static int BALL_HEIGHT = 27;
         public static int BALL_VELOCITY = 6;
 
         // RACKET
@@ -112,8 +112,8 @@ namespace Unit06
                 "Assets/Images/102.png"
             };
 
-        public static int RACKET_WIDTH = 106;
-        public static int RACKET_HEIGHT = 28;
+        public static int RACKET_WIDTH = 90;
+        public static int RACKET_HEIGHT = 95;
         public static int RACKET_RATE = 6;
         public static int RACKET_VELOCITY = 7;
 
