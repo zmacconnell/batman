@@ -38,8 +38,18 @@ namespace Unit06.Game.Scripting
 
             if (y < Constants.FIELD_TOP)
             {
-                ball.BounceY();
-                _audioService.PlaySound(bounceSound);
+                Stats stats = (Stats)cast.GetFirstActor(Constants.STATS_GROUP);
+                stats.RemoveLife();
+                
+                if (stats.GetLives() > 0)
+                {
+                    callback.OnNext(Constants.NEXT_LEVEL);
+                }
+                else
+                {
+                    callback.OnNext(Constants.GAME_OVER);
+                    _audioService.PlaySound(overSound);
+                }
             }
             else if (y >= Constants.FIELD_BOTTOM - Constants.BALL_WIDTH)
             {
