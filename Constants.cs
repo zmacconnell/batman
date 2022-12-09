@@ -95,7 +95,7 @@ namespace Unit06
         public static string SCORE_GROUP = "score";
         public static string LEVEL_FORMAT = "LEVEL: {0}";
         public static string LIVES_FORMAT = "LIVES: {0}";
-        public static string SCORE_FORMAT = "VILLIANS: {0}";
+        public static string SCORE_FORMAT = "VILLIANS DEFEATED: {0}";
 
         // BALL
         public static string BALL_GROUP = "balls";
