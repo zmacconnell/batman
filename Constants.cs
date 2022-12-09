@@ -95,7 +95,7 @@ namespace Unit06
         public static string SCORE_GROUP = "score";
         public static string LEVEL_FORMAT = "LEVEL: {0}";
         public static string LIVES_FORMAT = "LIVES: {0}";
-        public static string SCORE_FORMAT = "SCORE: {0}";
+        public static string SCORE_FORMAT = "VILLIANS: {0}";
 
         // BALL
         public static string BALL_GROUP = "balls";
@@ -174,7 +174,7 @@ namespace Unit06
         public static int BRICK_HEIGHT = 95;
         public static double BRICK_DELAY = 0.5;
         public static int BRICK_RATE = 4;
-        public static int BRICK_POINTS = 50;
+        public static int BRICK_POINTS = 1;
 
         // DIALOG
         public static string DIALOG_GROUP = "dialogs";
