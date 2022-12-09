@@ -16,6 +16,7 @@ namespace Unit06.Game.Directing
         public static PhysicsService PhysicsService = new RaylibPhysicsService();
         public static VideoService VideoService = new RaylibVideoService(Constants.GAME_NAME,
             Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT, Constants.BLACK);
+        private static bool wonGame = false;
 
         public SceneManager()
         {
@@ -23,9 +24,15 @@ namespace Unit06.Game.Directing
 
         public void PrepareScene(string scene, Cast cast, Script script)
         {
+            Stats stats = (Stats)cast.GetFirstActor(Constants.STATS_GROUP);
+
             if (scene == Constants.NEW_GAME)
             {
                 PrepareNewGame(cast, script);
+            }
+            else if (stats.GetLevel() > Constants.BASE_LEVELS) {
+                PrepareGameOver(cast, script);
+                wonGame = true;
             }
             else if (cast.GetAllActors() == null)
             {
@@ -131,9 +138,17 @@ namespace Unit06.Game.Directing
 
         private void PrepareGameOver(Cast cast, Script script)
         {
+            Stats stats = (Stats)cast.GetFirstActor(Constants.STATS_GROUP);
+
             AddBall(cast);
             AddRacket(cast);
-            AddDialog(cast, Constants.WAS_GOOD_GAME);
+            if (wonGame) {
+                AddDialog(cast, Constants.WAS_GOOD_GAME);
+            }
+            else {
+                AddDialog(cast, Constants.WAS_BAD_GAME);
+            }
+            
 
             script.ClearAllActions();
 

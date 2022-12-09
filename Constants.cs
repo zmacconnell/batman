@@ -63,7 +63,7 @@ namespace Unit06
 
         // LEVELS
         public static string LEVEL_FILE = "Assets/Data/level-{0:000}.txt";
-        public static int BASE_LEVELS = 6;
+        public static int BASE_LEVELS = 10;
 
         // ----------------------------------------------------------------------------------------- 
         // SCRIPTING CONSTANTS
@@ -179,7 +179,8 @@ namespace Unit06
         public static string DIALOG_GROUP = "dialogs";
         public static string ENTER_TO_START = "PRESS ENTER TO START";
         public static string PREP_TO_LAUNCH = "PREPARING TO LAUNCH";
-        public static string WAS_GOOD_GAME = "GAME OVER";
+        public static string WAS_BAD_GAME = "GAME OVER";
+        public static string WAS_GOOD_GAME = "GOTHAM IS SAFE ... FOR NOW";
 
 
 

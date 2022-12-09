@@ -62,6 +62,10 @@ namespace Unit06.Game.Scripting
                 {
                     callback.OnNext(Constants.TRY_AGAIN);
                 }
+                else if (stats.GetLevel() > Constants.BASE_LEVELS) {
+                    callback.OnNext(Constants.WAS_GOOD_GAME);
+                    _audioService.PlaySound(overSound);
+                }
                 else
                 {
                     callback.OnNext(Constants.GAME_OVER);
