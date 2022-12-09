@@ -154,7 +154,7 @@ namespace Unit06.Game.Directing
             int x = Constants.CENTER_X - Constants.BALL_WIDTH / 2;
             int y = Constants.SCREEN_HEIGHT - Constants.RACKET_HEIGHT - Constants.BALL_HEIGHT;
         
-            Point position = new Point(x, y - 100);
+            Point position = new Point(x, y - 20);
             Point size = new Point(Constants.BALL_WIDTH, Constants.BALL_HEIGHT);
             Point velocity = new Point(0, 0);
         
@@ -180,9 +180,10 @@ namespace Unit06.Game.Directing
                 for (int c = 0; c < rows[r].Count; c++)
                 {
                     Random rnd = new Random();
-                    int randomNumber = rnd.Next(1,12);
-                    int x = Constants.FIELD_LEFT + randomNumber * Constants.BRICK_WIDTH;
-                    int y = Constants.FIELD_TOP + randomNumber * Constants.BRICK_HEIGHT;
+                    int randomNumberX = rnd.Next(1,12);
+                    int randomNumberY = rnd.Next(1,4);
+                    int x = Constants.FIELD_LEFT + randomNumberX * Constants.BRICK_WIDTH;
+                    int y = Constants.FIELD_TOP + randomNumberY * Constants.BRICK_HEIGHT;
 
                     string color = rows[r][c][0].ToString();
                     int frames = (int)Char.GetNumericValue(rows[r][c][1]);

@@ -34,6 +34,7 @@ namespace Unit06
         public static string BOUNCE_SOUND = "Assets/Sounds/boing.wav";
         public static string WELCOME_SOUND = "Assets/Sounds/start.wav";
         public static string OVER_SOUND = "Assets/Sounds/over.wav";
+        public static string MISS_SOUND = "Assets/Sounds/miss.wav";
 
         // TEXT
         public static int ALIGN_LEFT = 0;
@@ -112,8 +113,8 @@ namespace Unit06
                 "Assets/Images/102.png"
             };
 
-        public static int RACKET_WIDTH = 90;
-        public static int RACKET_HEIGHT = 95;
+        public static int RACKET_WIDTH = 106;
+        public static int RACKET_HEIGHT = 36;
         public static int RACKET_RATE = 6;
         public static int RACKET_VELOCITY = 7;
 
@@ -168,8 +169,8 @@ namespace Unit06
                 } }
         };
 
-        public static int BRICK_WIDTH = 80;
-        public static int BRICK_HEIGHT = 28;
+        public static int BRICK_WIDTH = 90;
+        public static int BRICK_HEIGHT = 95;
         public static double BRICK_DELAY = 0.5;
         public static int BRICK_RATE = 4;
         public static int BRICK_POINTS = 50;

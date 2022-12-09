@@ -44,6 +44,8 @@ namespace Unit06.Game.Scripting
                 if (stats.GetLives() > 0)
                 {
                     callback.OnNext(Constants.NEXT_LEVEL);
+                    Sound sound = new Sound(Constants.MISS_SOUND);
+                    _audioService.PlaySound(sound);
                 }
                 else
                 {

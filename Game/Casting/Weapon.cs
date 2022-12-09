@@ -68,7 +68,7 @@ namespace Unit06.Game.Casting
         }
 
         /// <summary>
-        /// Releases ball in random horizontal direction.
+        /// Releases ball in horizontal direction.
         /// </summary>
         public void Release()
         {
