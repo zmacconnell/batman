@@ -198,7 +198,7 @@ namespace Unit06.Game.Directing
                 for (int c = 0; c < rows[r].Count; c++)
                 {
                     Random rnd = new Random();
-                    int randomNumberX = rnd.Next(1,10);
+                    int randomNumberX = rnd.Next(1,11);
                     int randomNumberY = rnd.Next(1,4);
                     int x = Constants.FIELD_LEFT + randomNumberX * Constants.BRICK_WIDTH;
                     int y = Constants.FIELD_TOP + randomNumberY * Constants.BRICK_HEIGHT;
