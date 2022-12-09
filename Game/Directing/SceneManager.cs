@@ -31,8 +31,8 @@ namespace Unit06.Game.Directing
                 PrepareNewGame(cast, script);
             }
             else if (stats.GetLevel() > Constants.BASE_LEVELS) {
-                PrepareGameOver(cast, script);
                 wonGame = true;
+                PrepareGameOver(cast, script);
             }
             else if (cast.GetAllActors() == null)
             {
@@ -147,12 +147,14 @@ namespace Unit06.Game.Directing
             }
             else {
                 AddDialog(cast, Constants.WAS_BAD_GAME);
+                Sound sound = new Sound(Constants.JOKER_LAUGH);
+                AudioService.PlaySound(sound);
             }
             
 
             script.ClearAllActions();
 
-            TimedChangeSceneAction ta = new TimedChangeSceneAction(Constants.NEW_GAME, 5, DateTime.Now);
+            TimedChangeSceneAction ta = new TimedChangeSceneAction(Constants.NEW_GAME, 7, DateTime.Now);
             script.AddAction(Constants.INPUT, ta);
 
             AddOutputActions(script);

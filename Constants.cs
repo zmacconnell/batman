@@ -35,6 +35,7 @@ namespace Unit06
         public static string WELCOME_SOUND = "Assets/Sounds/start.wav";
         public static string OVER_SOUND = "Assets/Sounds/over.wav";
         public static string MISS_SOUND = "Assets/Sounds/miss.wav";
+        public static string JOKER_LAUGH = "Assets/Sounds/laugh.wav";
 
         // TEXT
         public static int ALIGN_LEFT = 0;
