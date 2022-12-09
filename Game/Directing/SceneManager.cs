@@ -144,11 +144,12 @@ namespace Unit06.Game.Directing
             AddRacket(cast);
             if (wonGame) {
                 AddDialog(cast, Constants.WAS_GOOD_GAME);
+                wonGame = false;
             }
-            else {
+            else if (!wonGame) {
                 AddDialog(cast, Constants.WAS_BAD_GAME);
-                Sound sound = new Sound(Constants.JOKER_LAUGH);
-                AudioService.PlaySound(sound);
+                Sound laughSound = new Sound(Constants.JOKER_LAUGH);
+                AudioService.PlaySound(laughSound);
             }
             
 
