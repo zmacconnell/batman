@@ -172,7 +172,7 @@ namespace Unit06.Game.Directing
             int x = Constants.CENTER_X - Constants.BALL_WIDTH / 2;
             int y = Constants.SCREEN_HEIGHT - Constants.RACKET_HEIGHT - Constants.BALL_HEIGHT;
         
-            Point position = new Point(x, y - 20);
+            Point position = new Point(x, y - 1);
             Point size = new Point(Constants.BALL_WIDTH, Constants.BALL_HEIGHT);
             Point velocity = new Point(0, 0);
         

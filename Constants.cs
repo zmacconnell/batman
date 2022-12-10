@@ -103,6 +103,7 @@ namespace Unit06
         public static int BALL_WIDTH = 80;
         public static int BALL_HEIGHT = 27;
         public static int BALL_VELOCITY = 6;
+        public static int SHOOT_BALL = 0;
 
         // RACKET
         public static string RACKET_GROUP = "rackets";
@@ -115,7 +116,7 @@ namespace Unit06
             };
 
         public static int RACKET_WIDTH = 106;
-        public static int RACKET_HEIGHT = 36;
+        public static int RACKET_HEIGHT = 80;
         public static int RACKET_RATE = 6;
         public static int RACKET_VELOCITY = 7;
 
@@ -182,9 +183,5 @@ namespace Unit06
         public static string PREP_TO_LAUNCH = "PREPARING TO LAUNCH";
         public static string WAS_BAD_GAME = "GAME OVER";
         public static string WAS_GOOD_GAME = "GOTHAM IS SAFE ... FOR NOW";
-
-
-
-        public static int SHOOT_BALL = 0;
     }
 }
